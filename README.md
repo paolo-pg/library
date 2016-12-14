@@ -26,7 +26,7 @@ Voeg de onderstaande HTML code toe aan je body tag in je HTML file:
 
 Voeg de volgende twee regels toe aan je header tag:
 
-``html
+```html
 <script src="js/library.js"></script>
 <link rel="stylesheet" href="css/style.css">
 ```

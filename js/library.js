@@ -3,22 +3,11 @@
     'use strict';
     function defineLibrary(){
         var Library = {}; //Naam van library om aan te roepen
-        var name = "Timmy";
         
         // DIVS AANMAKEN BINNEN WRAPPER
 
 
         Library.play = function(){
-
-            //CSS veranderen
-            /*
-            var css = document.querySelector("#library");
-            css.style.backgroundColor = "#D93600";
-            css.style.fontFamily = "Helvetica";
-            css.style.fontSize = "36px";
-            css.style.textAlign = "center";
-            css.style.height = "200px";
-            */
 
             (function () {
             var dagDeel = {}; //Global variable om te gebruiken in andere functie
@@ -45,9 +34,9 @@
                 } 
                 today = mm+'/'+dd+'/'+yyyy;
                 
-                if (h >= 12) {
+                if (h >= 12 && h <= 18) {
                     dagDeel.waarde = "Goedemiddag ";
-                } else if (h >= 18) {
+                } else if (h > 18) {
                     dagDeel.waarde = "Goedenavond ";
                 }
                 else {
@@ -66,10 +55,10 @@
             startTime();
 
             var naam = prompt("Wat is je naam?");
-                    if (naam != null) {
+                    if (naam === "") {
+                        document.getElementById('library').innerHTML = "Geen naam ingevuld.";
+                    } else if (naam != null) { //WERKT NIET
                         document.getElementById('library').innerHTML = dagDeel.waarde + naam;
-                    } else if (naam === "") { //WERKT NIET
-                        document.getElementById('library').innerHTML = "Hallo " + "Naamloos";
                         console.log("naamloos");
                     } else {
                         document.getElementById('library').innerHTML = "Hallo " + "Geannuleerd";
