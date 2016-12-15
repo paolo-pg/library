@@ -36,7 +36,6 @@ Wil je liever een andere achtergrondafbeelding? Kies dan een foto uit de img map
 
 ```css
 #wrapper {
-	height: 100vh;
 	background-image: url("../img/bg3.jpg");
 ```
 
