@@ -3,9 +3,6 @@
     'use strict';
     function defineLibrary(){
         var Library = {}; //Naam van library om aan te roepen
-        
-        // DIVS AANMAKEN BINNEN WRAPPER
-
 
         Library.play = function(){
 
@@ -44,8 +41,8 @@
                 }
 
             // Output
-            document.getElementById('library2').innerHTML = h + ":" + m + ":" + s;
-            document.getElementById('library3').innerHTML = today;
+            document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+            document.getElementById('date').innerHTML = today;
             
             setTimeout(function () {
                 startTime()
@@ -56,12 +53,12 @@
 
             var naam = prompt("Wat is je naam?");
                     if (naam === "") {
-                        document.getElementById('library').innerHTML = "Geen naam ingevuld.";
-                    } else if (naam != null) { //WERKT NIET
-                        document.getElementById('library').innerHTML = dagDeel.waarde + naam;
+                        document.getElementById('name').innerHTML = "Geen naam ingevuld.";
+                    } else if (naam != null) { 
+                        document.getElementById('name').innerHTML = dagDeel.waarde + naam;
                         console.log("naamloos");
                     } else {
-                        document.getElementById('library').innerHTML = "Hallo " + "Geannuleerd";
+                        document.getElementById('name').innerHTML = "Hallo " + "Geannuleerd";
                     }
     })(); 
 
