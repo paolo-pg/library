@@ -18,7 +18,7 @@ De library kan als volgt geinstalleerd worden in je website.
 ###Mogelijkheid 1: GitHub clone
 
 ```
- "$ git clone https://github.com/paolo-pg/library"
+ $ git clone https://github.com/paolo-pg/library
  ```
 
 
@@ -43,6 +43,7 @@ Voeg de volgende twee regels toe aan je header tag:
 <link rel="stylesheet" href="css/style.css">
 ```
 
+###Achtergrondafbeelding wijzigen
 Wil je liever een andere achtergrondafbeelding? Kies dan een foto uit de img map en verander het onderstaande pad naar de afbeelding:
 
 ```html
