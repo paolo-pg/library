@@ -4,6 +4,11 @@
     function defineLibrary(){
         var Library = {}; //Naam van library om aan te roepen
 
+        //Achtergrondafbeelding wijzigen
+        Library.backgroundImage = function(image){
+            document.getElementById('wrapper').style.backgroundImage = 'url(' + image + ')';
+        }
+
         Library.play = function(){
 
             (function () {
